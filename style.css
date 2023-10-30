@@ -1,0 +1,9 @@
+table,th,td{
+    border: 1px solid gray;
+}
+th,td{
+    width: 100px;
+}
+.container{
+    margin-bottom: 30px;
+}
