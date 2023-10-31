@@ -82,7 +82,7 @@ submit.addEventListener('click', (e) => {
         })
         // table'a yazilan ve butun local storage datasini silmek
         deleteAll.onclick = () => {
-            tbody.remove()
+            tbody.innerHTML=""
             localStorage.removeItem('user')
         }
 
