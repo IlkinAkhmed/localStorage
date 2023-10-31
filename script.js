@@ -73,6 +73,7 @@ submit.addEventListener('click', (e) => {
                     if (items[index] === tdText.textContent) {
                         items.splice(index, 1)
                         setLocalStorage('user',items)
+                        arr=[]
 
                     }
 
@@ -82,8 +83,9 @@ submit.addEventListener('click', (e) => {
         })
         // table'a yazilan ve butun local storage datasini silmek
         deleteAll.onclick = () => {
-            tbody.innerHTML=""
+            tbody.innerHTML=''
             localStorage.removeItem('user')
+            arr=[]
         }
 
         // yazilan datani hem tablede hem de localda edit elemek
